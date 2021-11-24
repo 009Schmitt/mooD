@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class DoorButton : MonoBehaviour
 {
+    public Door porta;
 
+    public bool activated;
 
-
-
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
+        activated = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Interacted()
     {
-        
+        if (!activated)
+        {
+            porta.Abrir();
+        }
+        activated = true;
     }
+
+
 }
