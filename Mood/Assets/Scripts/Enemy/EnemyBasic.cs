@@ -15,7 +15,8 @@ public class EnemyBasic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(player);//incompleto
+        //transform.LookAt(player);//incompleto
+        transform.LookAt(new Vector3(player.position.x, .3f, player.position.z));
 
         transform.Translate(new Vector3(0, 0, moveSpeed / 100));
 

@@ -5,8 +5,7 @@ using UnityEngine;
 public class PlayerShotGun : MonoBehaviour
 {
     public Animator shotGunAnimations,ammoLeft,AmmoRight;
-
-
+    public PlayerShot playerShot;
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +16,8 @@ public class PlayerShotGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
-        if(Input.GetKeyDown(KeyCode.R) )
+        if (playerShot.reloading)
         {
-            print("Deu Certo");
             shotGunAnimations.SetBool("Reload", true);
             ammoLeft.SetBool("Reload", true);
             AmmoRight.SetBool("Reload", true);
