@@ -29,6 +29,16 @@ public class Door : MonoBehaviour
     public void Abrir()
     {
         buttonQuantity--;
+
+        try
+        {
+            FindObjectOfType<ManagerStage01>().SpawnEnemies();
+        }
+        catch (System.Exception ex)
+        {
+            print(ex.ToString());
+        }
+         
     }
 
 }

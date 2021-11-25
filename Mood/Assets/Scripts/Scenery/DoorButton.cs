@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorButton : MonoBehaviour
 {
     public Door porta;
+    public GameObject cristal;
 
     public bool activated;
 
@@ -18,6 +19,7 @@ public class DoorButton : MonoBehaviour
         if (!activated)
         {
             porta.Abrir();
+            cristal.SetActive(true);
         }
         activated = true;
     }
