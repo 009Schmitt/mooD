@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class ManagerStage01 : MonoBehaviour
 {
-    public GameObject enemy,boss;
+    public GameObject enemy,boss,globalLight;
+
+    private void Start()
+    {
+        Instantiate(globalLight);
+    }
 
 
     public void SpawnEnemies()

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class EnemyBasic : MonoBehaviour
 {
-    public Transform player;
+    public Transform player,attack;
     public float moveSpeed;
+    public LayerMask playerMask;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,11 @@ public class EnemyBasic : MonoBehaviour
         transform.LookAt(new Vector3(player.position.x, .3f, player.position.z));
 
         transform.Translate(new Vector3(0, 0, moveSpeed / 100));
+
+        if (Physics.CheckSphere(attack.position,.4f,playerMask))
+        {
+            FindObjectOfType<PlayerDeath>().Die();
+        }
 
     }
 
