@@ -57,14 +57,15 @@
     <Compile Include="Assets\Scripts\Player\PlayerCameraMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
+    <Compile Include="Assets\Scripts\Buttons\RestartButtonStage01.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShotGun.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyBasic.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemies\EnemyBasic.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShot.cs" />
     <Compile Include="Assets\Scripts\Scenery\DoorButton.cs" />
     <Compile Include="Assets\Scripts\Scenery\ManagerStage01.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDeath.cs" />
-    <Compile Include="Assets\Scripts\Buttons\RestartButtonStage01.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boses\Boss1\AttackGeneratorIncreasing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
