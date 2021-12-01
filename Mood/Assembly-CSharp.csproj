@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.22f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy\Boses\Boss1\AttackGeneratorIncreasing.cs" />
     <Compile Include="Assets\Scripts\Scenery\Door.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCameraMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
@@ -65,7 +66,9 @@
     <Compile Include="Assets\Scripts\Scenery\DoorButton.cs" />
     <Compile Include="Assets\Scripts\Scenery\ManagerStage01.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDeath.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Boses\Boss1\AttackGeneratorIncreasing.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boses\Boss1\AttackBoss1.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boses\Boss1\BoosShoot.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boses\Boss1\Boss1Behavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
