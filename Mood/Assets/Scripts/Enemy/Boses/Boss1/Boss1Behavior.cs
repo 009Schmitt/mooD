@@ -8,18 +8,26 @@ public class Boss1Behavior : MonoBehaviour
     public Animator leftArm, rightArm;
     public GameObject attackSphere;
 
+    public float atackSpeed;
 
-
+    private float actualTime;
     // Start is called before the first frame update
     void Start()
     {
-        
+        actualTime = Time.time;
+        print(actualTime);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+
+
+
+
+
+
     }
 
     public void Hurt()

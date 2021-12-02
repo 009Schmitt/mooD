@@ -27,7 +27,12 @@ public class ManagerStage01 : MonoBehaviour
 
             boss.SetActive(true);
 
+            Door d = FindObjectOfType<Door>();
 
+            d.buttonQuantity = 10;
+            d.transform.position = new Vector3(30, 10, 20);
+            
+            
             //foreach (var item in Physics.OverlapBox(boosTrigger.center, boosTrigger.size / 2, new Quaternion()))
             //{
             //    if (item.TryGetComponent<CharacterController>(out _))
