@@ -7,9 +7,6 @@ public class AttackBoss1 : MonoBehaviour
     public AttackGeneratorIncreasing boosBall;
     public GameObject shoot;
 
-    /// <summary>
-    /// 
-    /// </summary>
     public float shootAmount;
 
 
@@ -29,7 +26,7 @@ public class AttackBoss1 : MonoBehaviour
             if (actualTime < Time.time)
             {
                 Instantiate(shoot, transform.position, new Quaternion());
-
+                shootAmount--;
                 boosBall.transform.localScale -= new Vector3(ballScale, ballScale, ballScale);
                 actualTime = attackSpeed + Time.time;
                 if(boosBall.transform.localScale.x < 0)

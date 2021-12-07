@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boosBall: {fileID: 1649324018454036081}
   shoot: {fileID: 6210390683570374749, guid: 51d89987bd73490479743cc89fd6dc1c, type: 3}
-  shootAmount: 800
+  shootAmount: 8
 --- !u!1 &8156142480211772915
 GameObject:
   m_ObjectHideFlags: 0

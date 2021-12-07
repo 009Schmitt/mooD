@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class BoosShoot : MonoBehaviour
 {
-    public Transform playerTrans;
+    public Transform playerTrans, sphereEnd;
     public float moveSpeed;
+    public LayerMask playerLayer, otherThingsLayer;
 
-    public float morre;
+    //public float morre;
 
     // Start is called before the first frame update
     void Start()
     {
         playerTrans = FindObjectOfType<CharacterController>().GetComponent<Transform>();
         transform.LookAt(playerTrans);
-        morre = Time.time + 5;
+        //morre = Time.time + 5;
     }
 
     // Update is called once per frame
@@ -23,9 +24,24 @@ public class BoosShoot : MonoBehaviour
 
         transform.Translate(Vector3.forward * moveSpeed);
 
-        if(morre < Time.time)
+        //radius .3f;
+        if (Physics.CheckSphere(sphereEnd.position, .3f, otherThingsLayer))
         {
+            if (Physics.CheckSphere(sphereEnd.position, .3f, playerLayer))
+            {
+                FindObjectOfType<PlayerDeath>().Die();
+            }
+
             Destroy(gameObject);
         }
+
+
+
+
+
+        //if(morre < Time.time)
+        //{
+        //    Destroy(gameObject);
+        //}
     }
 }
